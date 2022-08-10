@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&family=Splash&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Splash&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search">
+        <input type="text" placeholder="name of city.." id="city-input" autocomplete ="off"/>
+        <input type="submit" value="search" class="btn btn-success" />
+        <div class ="col-6"> 
+          <button class ="btn btn-primary" id="current-location-button">Here 📍</button>
+        </div>
+      </form>
+      <h1 id="city"></h1>
+      <br />
+         <div class="date" id ="date">
+       Sunday July 10th, 2022
+    </div>
+<br />
+      <h2> <span id ="temperature"></span>°c</h2>
+      <p>
+        <div class="stats">
+      <div class="row">
+        <div class="col-12">Vibe: <span id ="description"></span></div>
+        <div class="col-12">Wind: <span id ="wind"></span>km/h</div>
+        <div class="col-12">Humidity: <span id ="humidity"></span>%</div>
+      </div>
+    </div>
+        </p>
+       <div class="days">
+        <div class="row">
+          <div class="col">
+           <div class="daymojis">🌤 </div>MONDAY 
+            <div class="highlow"> 22° 17°</div></div>
+            <div class="col">
+          <div class="daymojis">🌤</div> TUESDAY 
+          <div class="highlow"> 22° 17° </div> </div>
+          <div class="col">
+          <div class="daymojis">🌤</div> WEDNESDAY 
+          <div class="highlow"> 21° 16° </div></div> 
+          <div class="col">
+        <div class="daymojis">🌤</div> THURSDAY
+           <div class="highlow"> 23° 18° </div></div>
+           <div class="col"> 
+          <div class="daymojis"> ☀️ </div> FRIDAY
+            <div class="highlow"> 24° 18° </div></div> 
+          <div class="col">
+           <div class="daymojis"> ☀️ </div> SATURDAY
+             <div class="highlow"> 26° 19° </div></div>
+  </div>
+       </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

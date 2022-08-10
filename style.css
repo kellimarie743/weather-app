@@ -1,0 +1,66 @@
+form {
+  position: fixed;
+  top: 0;
+  left: 350px;
+}
+
+h1,
+h2,
+h3 {
+  position: fixed;
+}
+h1 {
+  color: purple;
+  font-size: 44px;
+  left: 10px;
+  font-family: "Ibarra Real Nova", serif;
+}
+h2 {
+  color: purple;
+  font-size: 40px;
+  top: 75px;
+  left: 40px;
+  font-family: "Playfair Display", serif;
+}
+h3 {
+  color: #1a6ec5;
+  font-size: 20px;
+  top: 120px;
+  left: 55px;
+  font-family: "Playfair Display", serif;
+}
+.stats {
+  font-size: 15px;
+  color: #1a6ec5;
+  position: fixed;
+  top: 85px;
+  left: 130px;
+  font-family: "Playfair Display", serif;
+}
+.date {
+  color: #eb6233;
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  font-size: 20px;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.daymojis {
+  font-size: 40px;
+}
+
+.days {
+  color: green;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  left: -50px;
+  font-family: "Playfair Display", serif;
+}
+.highlow {
+  color: #1a6ec5;
+  top: 200px;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+}
