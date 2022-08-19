@@ -1,7 +1,7 @@
 form {
   position: fixed;
   top: 0;
-  left: 350px;
+  left: 300px;
 }
 
 h1,
@@ -44,4 +44,12 @@ h3 {
   left: 10px;
   font-size: 20px;
   font-family: "Ibarra Real Nova", serif;
+}
+
+.weather-trim {
+  margin: 50px;
+  padding: 100px;
+  border: 10px solid purple;
+  border-radius: 30px;
+  max-width: 500px;
 }
