@@ -54,6 +54,8 @@ function showTemp(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function showStats(event) {
@@ -77,10 +79,17 @@ function getCurrentStats(event) {
 
 function showFahrenheitTemp(event) {
   event.preventDefault();
-  let fahrenTemp = (20 * 9) / 5 + 32;
+  let fahrenTemp = (celsiusTemperature * 9) / 5 + 32;
   let newTemperature = document.querySelector("#temperature");
   newTemperature.innerHTML = Math.round(fahrenTemp);
 }
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let newTemperature = document.querySelector("#temperature");
+  newTemperature.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
 
 let dateDisplay = document.querySelector("#date");
 let currentTime = new Date();
@@ -94,5 +103,8 @@ currentLocationButton.addEventListener("click", getCurrentStats);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemp);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 
 search("Los Angeles");
