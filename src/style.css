@@ -45,22 +45,3 @@ h3 {
   font-size: 20px;
   font-family: "Ibarra Real Nova", serif;
 }
-
-.daymojis {
-  font-size: 40px;
-}
-
-.days {
-  color: green;
-  font-size: 20px;
-  position: relative;
-  top: 100px;
-  left: -50px;
-  font-family: "Playfair Display", serif;
-}
-.highlow {
-  color: #1a6ec5;
-  top: 200px;
-  font-size: 15px;
-  font-family: "Playfair Display", serif;
-}
