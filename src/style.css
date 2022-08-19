@@ -4,7 +4,7 @@ form {
   left: 30px;
 }
 h1 {
-  color: #193d32;
+  color: #411751;
   font-size: 55px;
   position: fixed;
   top: 60px;
@@ -12,7 +12,7 @@ h1 {
   font-family: "Ibarra Real Nova", serif;
 }
 h2 {
-  color: #1c4125;
+  color: #193d32;
   font-size: 80px;
   position: fixed;
   top: 170px;
@@ -21,7 +21,7 @@ h2 {
 }
 .stats {
   font-size: 20px;
-  color: green;
+  color: #6f4d91;
   position: fixed;
   top: 170px;
   left: 220px;
