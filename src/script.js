@@ -75,6 +75,13 @@ function getCurrentStats(event) {
   navigator.geolocation.getCurrentPosition(hereNow);
 }
 
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let fahrenTemp = (20 * 9) / 5 + 32;
+  let newTemperature = document.querySelector("#temperature");
+  newTemperature.innerHTML = Math.round(fahrenTemp);
+}
+
 let dateDisplay = document.querySelector("#date");
 let currentTime = new Date();
 
@@ -84,5 +91,8 @@ searchForm.addEventListener("submit", showStats);
 dateDisplay.innerHTML = currentDate(currentTime);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentStats);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 search("Los Angeles");
