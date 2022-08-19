@@ -7,16 +7,16 @@ h1 {
   color: purple;
   font-size: 55px;
   position: fixed;
-  top: 90px;
-  left: 10px;
+  top: 60px;
+  left: 40px;
   font-family: "Ibarra Real Nova", serif;
 }
 h2 {
   color: purple;
   font-size: 70px;
   position: fixed;
-  top: 180px;
-  left: 30px;
+  top: 160px;
+  left: 50px;
   font-family: "Playfair Display", serif;
 }
 h3 {
@@ -30,23 +30,23 @@ h3 {
   font-size: 20px;
   color: #1a6ec5;
   position: fixed;
-  top: 200px;
-  left: 170px;
+  top: 175px;
+  left: 250px;
   font-family: "Playfair Display", serif;
 }
 .date {
   color: #eb6233;
   position: fixed;
-  top: 150px;
-  left: 10px;
+  top: 125px;
+  left: 30px;
   font-size: 25px;
   font-family: "Ibarra Real Nova", serif;
 }
 
 .weather-trim {
-  margin: 90px 0px;
+  margin: 50px 20px;
   padding: 120px;
-  border: 3px solid #1a6ec5;
+  border: 2px solid purple;
   border-radius: 30px;
   max-width: 400px;
 }
