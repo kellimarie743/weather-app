@@ -13,7 +13,7 @@ h1 {
 }
 h2 {
   color: purple;
-  font-size: 70px;
+  font-size: 80px;
   position: fixed;
   top: 170px;
   left: 50px;
@@ -21,7 +21,7 @@ h2 {
 }
 .stats {
   font-size: 20px;
-  color: #1a6ec5;
+  color: green;
   position: fixed;
   top: 170px;
   left: 220px;
@@ -37,7 +37,7 @@ h2 {
 }
 
 .celsiusFahren {
-  font-size: 25px;
+  font-size: 22px;
   position: fixed;
   top: 170px;
 }
