@@ -15,23 +15,16 @@ h2 {
   color: purple;
   font-size: 70px;
   position: fixed;
-  top: 160px;
+  top: 170px;
   left: 50px;
-  font-family: "Playfair Display", serif;
-}
-h3 {
-  color: #1a6ec5;
-  font-size: 20px;
-  top: 150px;
-  left: 55px;
-  font-family: "Playfair Display", serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .stats {
   font-size: 20px;
   color: #1a6ec5;
   position: fixed;
-  top: 175px;
-  left: 250px;
+  top: 170px;
+  left: 220px;
   font-family: "Playfair Display", serif;
 }
 .date {
@@ -41,6 +34,12 @@ h3 {
   left: 30px;
   font-size: 25px;
   font-family: "Ibarra Real Nova", serif;
+}
+
+.celsiusFahren {
+  font-size: 25px;
+  position: fixed;
+  top: 170px;
 }
 
 .weather-trim {
