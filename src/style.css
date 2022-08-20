@@ -45,6 +45,8 @@ h2 {
 .credits {
   position: fixed;
   left: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
 }
 
 .weather-trim {
