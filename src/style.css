@@ -42,6 +42,11 @@ h2 {
   top: 170px;
 }
 
+.credits {
+  position: fixed;
+  left: 30px;
+}
+
 .weather-trim {
   margin: 50px 20px;
   padding: 120px;
