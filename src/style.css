@@ -8,35 +8,59 @@ h1 {
   font-size: 55px;
   position: fixed;
   top: 60px;
-  left: 40px;
+  left: 30px;
   font-family: "Ibarra Real Nova", serif;
 }
-h2 {
+.daily-temp {
   color: #193d32;
   font-size: 65px;
   position: fixed;
-  top: 170px;
+  top: 160px;
   left: 50px;
   font-family: "Times New Roman", Times, serif;
 }
 
 li {
   list-style-type: none;
-  font-size: 18px;
-  color: #6f4d91;
+  font-size: 15px;
+  color: #411751;
   font-family: "Playfair Display", serif;
 }
 .date {
   color: #387d7d;
   position: fixed;
-  top: 125px;
-  left: 30px;
-  font-size: 25px;
+  top: 123px;
+  left: 25px;
+  font-size: 18px;
   font-family: "Ibarra Real Nova", serif;
 }
 
+.weekly-forecast,
+.forecast-max-min {
+  margin-top: -5px;
+  text-align: left;
+  left: 30px;
+  position: fixed;
+}
+.forecast-day,
+.forecast-max-min {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.forecast-day {
+  color: #6f4d91;
+  font-size: 19px;
+}
+.forecast-max-min {
+  color: #193d32;
+  font-size: 17px;
+  font-style: italic;
+}
+.forecast-max {
+  font-weight: bold;
+}
 .celsiusFahren {
-  font-size: 15px;
+  font-size: 17px;
   position: fixed;
   top: 170px;
 }
@@ -48,8 +72,8 @@ li {
   font-size: 15px;
 }
 
-.weather-trim {
-  margin: 50px 20px;
+.weather-frame {
+  margin: 50px -55px;
   padding: 120px;
   border: 2px solid #387d7d;
   border-radius: 30px;

@@ -27,47 +27,47 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="weather-trim">
-      <div class="container">
-        <form id="search">
-          <input
-            type="text"
-            placeholder="name of city.."
-            id="city-input"
-            autocomplete="off"
-          />
-          <input type="submit" value="search" class="btn btn-success" />
-          <button class="btn btn-primary" id="current-location-button">
-            Here 📍
-          </button>
-        </form>
+    <form id="search">
+      <input
+        type="text"
+        placeholder="name of city.."
+        id="city-input"
+        autocomplete="off"
+      />
+      <input type="submit" value="search" class="btn btn-success" />
+      <button class="btn btn-primary" id="current-location-button">
+        Here 📍
+      </button>
+    </form>
+    <div class="container">
+      <div class="weather-frame">
         <h1 id="city"></h1>
         <div class="date" id="date">Sunday July 10th, 2022</div>
-        <h2>
+        <div class="daily-temp">
           <span id="temperature">20</span>
           <span class="celsiusFahren">
             <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></span>
-        </h2>
-            <div class="col-12">
-              <ul>
-                <li>Vibe: <span id="description"></span></li>
-                <li>Wind: <span id="wind"></span>km/h</li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-              </ul>
-            </div>
-      
-            <div class="weekly-forecast">
-              <div class="row">
-                <div class="col-6">
-                  Thurs
-                  <img
-                    src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
-                    alt="sunshine"
-                    width="33"
-                  />
-                  80° 65°
-                </div>
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+        </div>
+        <ul>
+          <li>Vibe: <span id="description"></span></li>
+          <li>Wind: <span id="wind"></span>km/h</li>
+          <li>Humidity: <span id="humidity"></span>%</li>
+        </ul>
+
+        <div class="weekly-forecast">
+          <div class="row">
+            <div class="col-6">
+              <div class="forecast-day">Tues</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+                alt="sunshine"
+                width="33"
+              />
+              <div class="forecast-max-min">
+                <span class="forecast-max">80°</span>
+                <span class="forecast-low">65°</span>
               </div>
             </div>
           </div>
