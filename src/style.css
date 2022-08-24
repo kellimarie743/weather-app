@@ -13,18 +13,17 @@ h1 {
 }
 h2 {
   color: #193d32;
-  font-size: 80px;
+  font-size: 65px;
   position: fixed;
   top: 170px;
   left: 50px;
   font-family: "Times New Roman", Times, serif;
 }
-.stats {
-  font-size: 20px;
+
+li {
+  list-style-type: none;
+  font-size: 18px;
   color: #6f4d91;
-  position: fixed;
-  top: 170px;
-  left: 220px;
   font-family: "Playfair Display", serif;
 }
 .date {
@@ -37,7 +36,7 @@ h2 {
 }
 
 .celsiusFahren {
-  font-size: 22px;
+  font-size: 15px;
   position: fixed;
   top: 170px;
 }
