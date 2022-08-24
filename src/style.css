@@ -37,10 +37,7 @@ li {
 
 .weekly-forecast,
 .forecast-max-min {
-  margin-top: -5px;
-  text-align: left;
-  left: 30px;
-  position: fixed;
+  margin-top: 10px;
 }
 .forecast-day,
 .forecast-max-min {
@@ -73,7 +70,7 @@ li {
 }
 
 .weather-frame {
-  margin: 50px -55px;
+  margin: 50px -60px;
   padding: 120px;
   border: 2px solid #387d7d;
   border-radius: 30px;

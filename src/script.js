@@ -36,6 +36,34 @@ function currentDate(date) {
   return `${days[dayInfo]}, ${months[monthInfo]} ${dayNumber} at ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tues", "Wed", "Thurs", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-3">
+      <div class="forecast-day">${day}</div>
+      <img
+        src="https://ssl.gstatic.com/onebox/weather/48/sunny.png"
+        alt="sunshine"
+        width="33"
+      />
+      <div class="forecast-max-min">
+        <span class="forecast-max">80°</span>
+        <span class="forecast-low">65°</span>
+      </div>
+    </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(city) {
   let apiKey = "dd8579c5f641bd775219e128e944f6aa";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -108,3 +136,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
 
 search("Los Angeles");
+displayForecast();
