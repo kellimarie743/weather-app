@@ -12,18 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&family=Splash&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Splash&display=swap"
-      rel="stylesheet"
-    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
@@ -39,9 +27,7 @@
         Here 📍
       </button>
     </form>
-    <div class="container">
-      <div class="weather-frame">
-        <h1 id="city"></h1>
+        <h1 class="cityName" id="city"></h1>
         <div class="date" id="date">Sunday July 10th, 2022</div>
         <div class="daily-temp">
           <span id="temperature">20</span>
@@ -59,7 +45,7 @@
 
         <div class="weekly-forecast" id="forecast"></div>
       </div>
-    </div>
+  
 
     <div class="credits">
       <a href="https://github.com/kellimarie743/weather-app.git"

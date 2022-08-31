@@ -1,0 +1,31 @@
+.date,
+.daily-temp,
+.celsiusFahren,
+ul {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.cityName {
+  color: #0d2416;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.date {
+  color: #3d286b;
+  font-size: 20px;
+}
+
+.daily-temp {
+  color: #183923;
+  font-size: 47px;
+  font-weight: bolder;
+}
+.celsiusFahren {
+  font-size: 20px;
+}
+ul {
+  list-style: none;
+  color: #3d286b;
+}
