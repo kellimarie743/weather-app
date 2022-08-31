@@ -38,17 +38,19 @@ ul {
   left: 10px;
 }
 .celsiusFahren {
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   top: -20px;
+  left: -10px;
 }
+
 ul {
   list-style: none;
   color: #431d5b;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   top: -60px;
-  left: 100px;
+  left: 70px;
 }
 .container-fluid {
   color: #112d1f;

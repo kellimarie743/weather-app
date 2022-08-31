@@ -131,20 +131,6 @@ function getCurrentStats(event) {
   navigator.geolocation.getCurrentPosition(hereNow);
 }
 
-function showFahrenheitTemp(event) {
-  event.preventDefault();
-  let fahrenTemp = (celsiusTemperature * 9) / 5 + 32;
-  let newTemperature = document.querySelector("#temperature");
-  newTemperature.innerHTML = Math.round(fahrenTemp);
-}
-function showCelsiusTemp(event) {
-  event.preventDefault();
-  let newTemperature = document.querySelector("#temperature");
-  newTemperature.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let dateDisplay = document.querySelector("#date");
 let currentTime = new Date();
 
@@ -154,11 +140,5 @@ searchForm.addEventListener("submit", showStats);
 dateDisplay.innerHTML = currentDate(currentTime);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentStats);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheitTemp);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemp);
 
 search("Los Angeles");
