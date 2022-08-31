@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <form class = "search" id="search">
+    <form class="search" id="search">
       <input
         type="text"
         placeholder="name of city.."
@@ -27,32 +27,75 @@
         Here 📍
       </button>
     </form>
-    <div class = "container">
-        <h1 class="cityName" id="city"></h1>
-        <div class="date" id="date">Sunday July 10th, 2022</div>
-        <div class="daily-temp">
-          <span id="temperature">20</span>
-          <span class="celsiusFahren">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
-        </div>
+    <div class="container">
+      <h1 class="cityName" id="city"></h1>
+      <div class="date" id="date">Sunday July 10th, 2022</div>
+      <div class="daily-temp">
+        <span id="temperature">20</span>
+        <span class="celsiusFahren">
+          <a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+      </div>
 
-        <ul>
-          <li>Vibe: <span id="description"></span></li>
-          <li>Wind: <span id="wind"></span>km/h</li>
-          <li>Humidity: <span id="humidity"></span>%</li>
-        </ul>
+      <ul>
+        <li>Vibe: <span id="description"></span></li>
+        <li>Wind: <span id="wind"></span>km/h</li>
+        <li>Humidity: <span id="humidity"></span>%</li>
+      </ul>
 
-        <div class="weekly-forecast" id="forecast"></div>
-        <div class ="container-fluid"> 
-          <div class="row"> 
-            <div class="col-2">Mon</div>
-            <div class ="col-2">Tues</div>
-            <div class="col-2">Wed</div>
-            <div class="col-2">Thur</div>
-            <div class="col-2">Fri</div>
-            <div class="col-2">Sat</div>
+      <div class="container-fluid" id="forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="forecast-day">
+              Mon</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+              18° 12°
+            </div>
+            <div class="col-2">
+              <div class="forecast-day">
+              Tues</div>
+                  <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+              18° 12°
+            </div>
+            <div class="col-2"><div class="forecast-day">Wed</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+            18° 12°
+          </div>
+            <div class="col-2"><div class="forecast-day">Thur</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+              18° 12°
+            </div>
+            <div class="col-2"><div class="forecast-day">Fri</div>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+              18° 12°
+            </div>
+            <div class="col-2"><div class="forecast-day">Sat</div>    <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="sun with clouds"
+                width="36"
+              />
+            18° 12°</div>
           </div>
         </div>
       </div>

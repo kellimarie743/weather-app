@@ -5,8 +5,8 @@
 
 .container {
   max-width: 500px;
-  margin: 5px 10px;
-  padding: 15px;
+  margin: 5px 6px 40px;
+  padding: 5px;
   border: 2px solid #112d1f;
   border-radius: 10px;
 }
@@ -39,6 +39,8 @@ ul {
 }
 .celsiusFahren {
   font-size: 15px;
+  position: relative;
+  top: -20px;
 }
 ul {
   list-style: none;
@@ -51,6 +53,12 @@ ul {
 .container-fluid {
   color: #112d1f;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: relative;
+  top: -40px;
+}
+
+.forecast-day {
+  font-size: 20px;
 }
 
 .credits {
