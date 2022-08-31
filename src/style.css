@@ -32,7 +32,7 @@ ul {
 
 .daily-temp {
   color: #431d5a;
-  font-size: 47px;
+  font-size: 55px;
   font-weight: bolder;
   position: relative;
   left: 10px;
@@ -59,6 +59,18 @@ ul {
 
 .forecast-day {
   font-size: 20px;
+}
+
+.weekly-forecast-temp {
+  color: #431d5a;
+}
+
+.weekly-forecast-high {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.weekly-forecast-low {
+  font-size: 15px;
 }
 
 .credits {
