@@ -1,3 +1,16 @@
+.search {
+  position: relative;
+  left: 12px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 10px 5px 12px 5px;
+  padding: 5px;
+  border: 2px solid #112d1f;
+  border-radius: 10px;
+}
+
 .date,
 .daily-temp,
 .celsiusFahren,
@@ -6,26 +19,36 @@ ul {
 }
 
 .cityName {
-  color: #0d2416;
+  color: #431d5a;
   font-family: "Times New Roman", Times, serif;
   font-size: 50px;
   font-weight: bold;
 }
 
 .date {
-  color: #3d286b;
+  color: #112d1f;
   font-size: 20px;
 }
 
 .daily-temp {
-  color: #183923;
+  color: #431d5a;
   font-size: 47px;
   font-weight: bolder;
+  position: relative;
+  left: 10px;
 }
 .celsiusFahren {
-  font-size: 20px;
+  font-size: 15px;
 }
 ul {
   list-style: none;
-  color: #3d286b;
+  color: #431d5b;
+  font-size: 18px;
+  position: relative;
+  top: -60px;
+  left: 100px;
+}
+.credits {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
 }
