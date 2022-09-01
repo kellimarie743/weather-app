@@ -62,7 +62,7 @@ function displayForecast(response) {
           forecastDay.weather[0].icon
         }@2x.png"
         alt=""
-        width="44"
+        width="50"
       />
       <div class="weekly-forecast-temp">
         <span class="weekly-forecast-high">${Math.round(
@@ -84,14 +84,14 @@ function displayForecast(response) {
 
 function search(city) {
   let apiKey = "dd8579c5f641bd775219e128e944f6aa";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
   axios.get(apiUrl).then(showTemp);
 }
 
 function getForecast(coordinates) {
   let apiKey = "dd8579c5f641bd775219e128e944f6aa";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -107,8 +107,6 @@ function showTemp(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 
-  celsiusTemperature = response.data.main.temp;
-
   getForecast(response.data.coord);
 }
 
@@ -122,7 +120,7 @@ function hereNow(position) {
   let apiKey = "dd8579c5f641bd775219e128e944f6aa";
   let longitude = position.coords.longitude;
   let latitude = position.coords.latitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(showTemp);
 }
 
